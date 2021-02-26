@@ -1,4 +1,9 @@
 pipeline {
+    agent {
+        docker {
+            image 'busybox' 
+        }
+    }
     stages {
         stage('Build') { 
             steps {
