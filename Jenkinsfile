@@ -7,7 +7,8 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'echo build ok' 
+                sh 'ip a'
+                sh 'hostname' 
             }
         }
         stage('Deploy') { 
