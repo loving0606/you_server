@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'busybox' 
+            image 'nginx' 
         }
     }
     stages {
