@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh 'rm -rf /node/*' 
                 sh 'cp -a ./* /node' 
-                sh 'docker restart you-node' 
+                sh 'curl -X POST --unix-socket /var/run/docker.sock http:/containers/you-node/restart' 
             }
         }
     }
