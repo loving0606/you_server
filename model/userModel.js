@@ -91,6 +91,91 @@ let shouruRule = new Schema({
     },
     createTime: {
         type: Date
+    },
+    totals: {
+        type: Number
     }
+
 })
-module.exports = { oilRule, shouyiRule, shouruRule }
+
+let urea1Rule = new Schema({
+    enter: {
+        type: Number,
+        default: 0
+    },
+    out: {
+        type: Number,
+        default: 0
+    },
+
+    leftover: {
+        type: Number,
+        default: 0
+
+    },
+    date: {
+        type: Date
+    },
+    createTime: {
+        type: Date
+    }
+
+})
+let urea2Rule = new Schema({
+        enter: {
+            type: Number,
+            default: 0
+        },
+        out: {
+            type: Number,
+            default: 0
+        },
+
+        leftover: {
+            type: Number,
+            default: 0
+
+        },
+        date: {
+            type: Date
+        },
+        createTime: {
+            type: Date
+        }
+
+    })
+    //油卡
+let cardRule = new Schema({
+    wanneng: {
+        type: Number,
+        default: 0
+    },
+    huihui: {
+        type: Number,
+        default: 0
+    },
+    lvchang: {
+        type: Number,
+        default: 0
+    },
+    zhongtian: {
+        type: Number,
+        default: 0
+    },
+    guoka: {
+        type: Number,
+        default: 0
+    },
+    date: {
+        type: Date
+    },
+    createTime: {
+        type: Date
+    },
+    totals: {
+        type: Number
+    }
+
+})
+
+module.exports = { oilRule, shouyiRule, shouruRule, urea1Rule, urea2Rule, cardRule }
